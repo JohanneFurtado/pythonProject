@@ -1,0 +1,60 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PLENOENERGIA</title>
+
+    <link rel="stylesheet" href= "{% static 'CSS/style.css' %}">
+</head>
+
+<body>
+    <header class="header header-light header-topbar header-topbar1 header-shadow" id="navbar-spy">
+        <div class="top-bar">
+            <div class="block-left">
+                <div> <img class="logo logo-mobile" src="https://plenoenergia.com/images/logo/logo.png"
+                        alt="Pleno Energia">
+                </div>
+                <div class="top-contact">
+                    <div class="contact-infos"><i class="fa-solid fa-phone"></i>
+                        <div class="contact-body">
+                            <p>Telefone: <a href="tel:+351214182066">+351214182066</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-infos"><i class="fa-solid fa-envelope"></i>
+                        <div class="contact-body">
+                            <p>Email: <a href="mailto:geral@plenoenergia.pt">geral@plenoenergia.pt </a></p>
+                        </div>
+                    </div>
+                    <div class="contact-infos"><i class="fa-solid fa-clock"></i>
+                        <div class="contact-body">
+                            <p>Horário: 9h00 – 18h00 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block-right">
+                <li class="nav-item" id="contact" data-hover="">
+                    <a href="https://plenoenergia.com/pt/pt/contact">
+                        <span>Cadastrar</span>
+                    </a>
+                </li>
+                <div class="module module-language">
+                    <div class="selected"><img src="https://plenoenergia.com/images/module-language/pt.png" alt="pt">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div>
+        <main class="container">
+            {% block conteudo %}
+
+            {% endblock conteudo %}
+        </main>
+    </div>
+</body>
+
+</html>
